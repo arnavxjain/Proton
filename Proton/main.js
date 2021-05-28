@@ -1,5 +1,4 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
-const open = require("open");
 const path = require("path");
 
 let window;
