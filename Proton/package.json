@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/arnavjainn06/Proton/issues"
   },
-  "homepage": "https://github.com/arnavjainn06/Proton#readme"
+  "homepage": "https://github.com/arnavjainn06/Proton#readme",
+  "devDependencies": {
+    "electron": "^13.0.1"
+  }
 }
