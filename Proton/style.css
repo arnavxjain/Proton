@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: #f5f5f5; */
+    overflow-y: hidden;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 9px 18px, rgba(0, 0, 0, 0.22) 0px 7.5px 6px; */
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    background-color: #f6fdff;
+    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 3px;
+    position: fixed;
+    width: 100%;
+    user-select: none;
+}
+
+.mover {
+    flex: 1;
+    transform: translate(3px, -6.5px);
+    background-color: #f6fdff;
+    -webkit-app-region: drag;
+    height: 30px;
+}
+
+.frame .controls {
+    width: fit-content;
+    margin-left: 7px;
+    /* margin-right: 7px; */
+}
+
+.fas {
+    font-size: 17px;
+    /* margin-left: 4px; */
+    /* margin-right: 4px; */
+    cursor: pointer;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(54, 54, 54);
+    transition: 200ms ease-in-out;
+}
+
+.fas:hover {
+    background-color: lightgray;
+    transition: 200ms ease-in-out;
+}
+
+.fa-minus {
+    border-bottom-left-radius: 8px;
+}
+
+.fa-times {
+    border-top-right-radius: 10px;
+}
+
+.fa-times:hover {
+    background-color: rgb(255, 138, 117);
+}
+
+.browser {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffffff;
+    min-height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    height: 800px;
+}
+
+img {
+    object-fit: contain;
+    width: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    margin-top: 2px;
+}
+
+img:hover {
+    background-color: lightgray;
+    transition: 200ms ease-in-out;
+}
+
+.cancel-btn {
+    margin-right: 5px;
+}
+
+.cancel-btn:hover {
+    background-color: rgb(255, 86, 86);
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(223, 223, 223);
+    border: 5px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+}
