@@ -24,7 +24,8 @@ const initializeApp = () => {
         icon: './assets/ProtonLogo.png',
         webPreferences: {
             nodeIntegration: true,
-            // backgroundThrottling: false,
+            contextIsolation: false,
+            enableRemoteModule: true,
             devTools: true,
         }
     });
@@ -32,18 +33,25 @@ const initializeApp = () => {
     window.loadURL(`file://${path.join(__dirname, 'index.html')}`);
     window.removeMenu(true)
 
-    // window.webContents.toggleDevTools();
+    window.webContents.toggleDevTools();
 
 }
 
 ipcMain.on("proton-maximize", () => {
-    if (window.isMinimized()) {
-        window.maximize();
-    } else {
-        window.minimize();
+    window.maximize();
+    if (window.isMaximized()) {
+        ipcMain.emit("maximized-success");
     }
 });
 
 ipcMain.on("proton-minimize", () => {
     window.minimize();
+});
+
+ipcMain.on("proton-close", () => {
+    app.quit();
+});
+
+ipcMain.on("proton-smallify", () => {
+    window.unmaximize();
 });
