@@ -21,6 +21,8 @@ const initializeApp = () => {
         // fullscreen: true,
         hasShadow: true,
         resizable: true,
+        minWidth: 720,
+        minHeight: 300,
         icon: './assets/ProtonLogo.png',
         webPreferences: {
             nodeIntegration: true,

@@ -9,16 +9,78 @@
     <title>Proton</title>
 </head>
 <body>
-    <div class="frame">
-        <div class="mover"></div>
-        <div class="controls">
-            <img src="./assets/minimize.png" class="minimize-btn">
-            <img src="./assets/enlarge.png" class="enlarge-toggler">
-            <img src="./assets/cross2.png" class="cancel-btn">
+    <!-- <div class="frame">
+        <div class="mover">
+            <span>Proton - Home Page</span>
         </div>
-    </div>
-    <div class="browser">
-        <h3>browser</h3>
+        <div class="controls">
+            <img src="./assets/minimize.png" class="minimize-btn app-img">
+            <img src="./assets/enlarge.png" class="enlarge-toggler app-img">
+            <img src="./assets/cross2.png" class="cancel-btn app-img">
+        </div>
+    </div> -->
+    <div class="browser" id="browser">
+        <div class="tab">
+            <div class="page-controls-left">
+                <div class="page-controls">
+                    <img src="./assets/back.png" class="app-img">
+                    <img src="./assets/front.png" class="app-img">
+                </div>
+                <img src="./assets/bookmarks.png" class="bookmarks-icon app-img">
+                <img src="./assets/mover2.png" class="app-img mover-icon">
+            </div>
+            <div class="page-controls-center">
+                <input type="text" id="input_main" placeholder="Search Google or tpye a URL">
+                <img src="./assets/reload.png" class="reload-icon app-img">
+            </div>
+            <div class="page-controls-right">
+                <div class="controls">
+                    <img src="./assets/minimize.png" class="minimize-btn app-img">
+                    <img src="./assets/enlarge.png" class="enlarge-toggler app-img">
+                    <img src="./assets/cross2.png" class="cancel-btn app-img">
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page">
+            <!-- <div class="pop-webs">
+                <h2 style="color: black">Popular Websites</h2>
+                <div class="recommendation_grid">
+                    <a href="https://youtube.com" class="recom">
+                        <img src="./assets/youtube.png">
+                        <div class="tooltip">YouTube</div>
+                    </a>
+                    <a  href="https://netflix.com" class="recom link">
+                        <img src="./assets/netflix.png">
+                        <div class="tooltip">Netflix</div>
+                    </a>
+                    <a href="https://amazon.com" class="recom link">
+                        <img src="./assets/amazon.png">
+                        <div class="tooltip">Amazon</div>
+                    </a>
+                    <a href="https://instagram.com" class="recom link">
+                        <img src="./assets/insta.png">
+                        <div class="tooltip">Instagram</div>
+                    </a>
+                    <a href="https://facebook.com" class="recom link">
+                        <img src="./assets/facebook.png">
+                        <div class="tooltip">FaceBook</div>
+                    </a>
+                    <a href="https://wikipedia.com" class="recom link">
+                        <img src="./assets/wiki.png">
+                        <div class="tooltip">WikiPedia</div>
+                    </a>
+                    <a href="https://reddit.com" class="recom link">
+                        <img src="./assets/reddit.png">
+                        <div class="tooltip">Reddit</div>
+                    </a>
+                    <a href="https://zoom.us" class="recom link">
+                        <img src="./assets/zoom.png">
+                        <div class="tooltip">Zoom</div>
+                    </a>
+                </div>
+            </div> -->
+            <iframe src="https://youtube.com" title="YouTube"></iframe>
+        </div>
     </div>
 
     <script src="index.js"></script>
